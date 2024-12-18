@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  bg-light fixed-top ">
+      <div class="container ">
+        <a class="navbar-brand" href="#">
+          <img src="logo2.png" class="me-2" height="20" alt="TG Logo" loading="lazy">
+          <small>TG HOSTING</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link  " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Administracion" data-bs-toggle="offcanvas" data-bs-target="#Administracion">Administracion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="Administracion" aria-labelledby="AdministracionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title " id="AdministracionLabel">Administracion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <a class="btn btn-dark" href="dashboard.html">dashboard</a>
+      </div>
+    </div>
+    <div class="toast position-fixed bottom-0 end-0 p-3 bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+      <div class="toast-header bg-success text-white">
+        <img src="" class="rounded me-2">
+        <strong class="me-auto">TG HOSTING</strong>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="container mt-5 pt-5" style="background-image: url('https://images.unsplash.com/photo-1680691257251-5fead813b73e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); height: 100vh">
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Pedido #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VPS PRINCIPAL</td>
+                    <td>2</td>
+                    <td>$100</td>
+                    <td>
+                      <a href="#" class="btn btn-warning btn-sm">Modificar</a>
+                      <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Pedido #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>WEB HOSTING</td>
+                    <td>1</td>
+                    <td>$50</td>
+                    <td>
+                      <a href="#" class="btn btn-warning btn-sm">Modificar</a>
+                      <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Pedido #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CERTIFICADO SSL</td>
+                    <td>5</td>
+                    <td>$25</td>
+                    <td>
+                      <a href="#" class="btn btn-warning btn-sm">Modificar</a>
+                      <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
